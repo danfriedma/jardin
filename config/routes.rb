@@ -5,6 +5,10 @@ Jardin::Application.routes.draw do
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
+root :to => 'home#emptyroute'
+
+get '/home' => 'home#index'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
