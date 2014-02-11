@@ -1,11 +1,10 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Over the course of this class, jardin will grow into a digital ecosystem of ideas. Human users will be able to create, read, update and delete ideas: deliberate design choices of the ecosystem will seek to promote the evolution of successful ideas.
 
-Things you may want to cover:
+Things I will cover as I progress:
 
-* Ruby version
+* Ruby version - 2.1.0
 
 * System dependencies
 
