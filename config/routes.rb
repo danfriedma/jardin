@@ -1,4 +1,6 @@
 Jardin::Application.routes.draw do
+  resources :users
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -8,6 +10,12 @@ Jardin::Application.routes.draw do
 root :to => 'home#emptyroute'
 
 get '/home' => 'home#index'
+
+  get "signup" => "users#new", :as => "signup"
+  post "signup" => "users#create"
+  get "login" => "sessions#new", :as => "login"
+  post "login" => "sessions#create"
+  get "logout" => "sessions#destroy", :as => "logout"
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
