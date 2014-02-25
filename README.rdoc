@@ -2,26 +2,18 @@
 
 Over the course of this class, jardin will grow into a digital ecosystem of ideas. Human users will be able to create, read, update and delete ideas: deliberate design choices of the ecosystem will seek to promote the evolution of successful ideas.
 
-Things I will cover as I progress:
+Models
+======
 
-* Ruby version - 2.1.0
+User
+----
+authors articles
+makes comments
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Comments
+--------
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Article
+-------
+has many comments
