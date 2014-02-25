@@ -63,6 +63,8 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.25.1)
     minitest (4.7.5)
+    mongoid-ancestry (0.4.0)
+      mongoid
     moped (2.0.0.beta6)
       bson (~> 2.2)
       connection_pool (~> 1.2)
@@ -129,6 +131,7 @@ DEPENDENCIES
   jbuilder (~> 1.2)
   jquery-rails
   mongoid!
+  mongoid-ancestry
   rails (= 4.0.2)
   sass-rails (~> 4.0.0)
   sdoc

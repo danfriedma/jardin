@@ -3,7 +3,6 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
 
-
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
@@ -26,6 +25,8 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 
 gem 'mongoid', git: 'https://github.com/mongoid/mongoid.git'
+
+gem 'mongoid-ancestry'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
