@@ -6,7 +6,6 @@ class ApplicationController < ActionController::Base
 
 before_action :require_user
 
-
 helper_method :current_user
 def current_user
     return @user if @user

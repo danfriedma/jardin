@@ -7,10 +7,9 @@ Jardin::Application.routes.draw do
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
-root :to => 'home#emptyroute'
+  root :to => 'home#emptyroute'
 
-get '/home' => 'home#index'
-
+  get '/home' => 'home#index'
   get "signup" => "users#new", :as => "signup"
   post "signup" => "users#create"
   get "login" => "sessions#new", :as => "login"
