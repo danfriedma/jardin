@@ -24,7 +24,9 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
-gem 'mongoid', git: 'https://github.com/mongoid/mongoid.git'
+gem 'mongoid', '~>4.0.0.beta1'
+
+gem 'bson_ext'
 
 gem 'mongoid-ancestry'
 
