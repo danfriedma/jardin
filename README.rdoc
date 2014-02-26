@@ -7,13 +7,15 @@ Models
 
 User
 ----
-authors articles
-makes comments
+has many articles
+has many comments
 
 Comments
 --------
-
+belongs to user
+belongs to article
 
 Article
 -------
+belongs to user
 has many comments

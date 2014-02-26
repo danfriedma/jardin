@@ -1,6 +1,6 @@
 class Article
   include Mongoid::Document
   has_many :comments, :as => :commentable
-  has_one :user
+  belongs_to :user
   field :content, type: String
 end
