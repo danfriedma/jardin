@@ -1,18 +1,18 @@
-== README
+= README
 
 Over the course of this class, jardin will grow into a digital ecosystem of ideas. Human users will be able to create, read, update and delete ideas: deliberate design choices of the ecosystem will seek to promote the evolution of successful ideas.
 
-# Models
+== Models
 
 
-## User
+=== User
 has many articles
 has many comments
 
-## Comments
+=== Comments
 belongs to user
 belongs to article
 
-## Article
+=== Article
 belongs to user
 has many comments
