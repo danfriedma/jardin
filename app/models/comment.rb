@@ -1,7 +1,7 @@
 class Comment
   include Mongoid::Document
-  #include Mongoid::Ancestry
-  #has_ancestry
   belongs_to :commentable, :polymorphic => true
+  include Mongoid::Ancestry
+  has_ancestry
   field :content, type: String
 end
