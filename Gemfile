@@ -32,6 +32,11 @@ gem 'mongoid-ancestry'
 
 gem 'smarter_csv'
 
+gem 'bootstrap-sass'
+group :development do
+  gem 'rails_layout'
+end
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false

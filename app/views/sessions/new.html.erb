@@ -1,11 +1,13 @@
-<%= form_for :session, :url => login_url, :method => :post do |f| %>
+<div class="row">
+	<div class="col-lg-12">
+		<%= form_for :session, :url => login_url, :method => :post do |f| %>
 
-	<%= f.label "Email address" %>
-	<%= f.text_field :email %>
+			<%= f.text_field :email, :placeholder => "Email" %>
 
-	<div class="actions">
-		<br/>
-		<%= f.submit "Log in" %>
+			<div class="actions">
+				<%= f.submit "Log in", :class => "btn btn-default" %>
+			</div>
+
+		<% end %>
 	</div>
-
-<% end %>
+</div>

@@ -1,0 +1,12 @@
+<%# add navigation links to this file %>
+<% if current_user %>
+	<li><%= link_to 'Logout', logout_path %></li>
+<% else %>
+	<li><%= link_to 'Sign Up', signup_path %></li>
+	<li><%= form_for :session, :url => login_url, :method => :post, :html => { :class => "navbar-form" } do |f| %>
+		<%= f.text_field :email, :placeholder => "Email" %></li>
+		<li><div class="actions">
+			<%= f.submit "Log in", :class => "btn btn-default" %>
+		</div>
+	<% end %></li>
+<% end %>

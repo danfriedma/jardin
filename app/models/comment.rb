@@ -4,4 +4,6 @@ class Comment
   include Mongoid::Ancestry
   has_ancestry
   field :content, type: String
+
+  validates :content, :presence => true 
 end
