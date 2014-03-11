@@ -6,6 +6,6 @@ class User
   field :password, type: String
   field :email, type: String
 
-  validates :name, :presence => { :message => "You must provide an email." }
-  validates :email, :uniqueness => true
+  validates :password, :presence => true
+  validates :email, :presence => true, :uniqueness => true
 end
